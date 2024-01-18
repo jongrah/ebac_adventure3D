@@ -18,5 +18,6 @@ namespace Ebac.StateMachine
         {
             Debug.Log("OnStateEnter");
         }
+
     }
 }
