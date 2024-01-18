@@ -32,41 +32,7 @@ public class GameManager : Singleton<GameManager>
         stateMachine.RegisterStates(GameStates.WIN, new GMStateWin());
         stateMachine.RegisterStates(GameStates.LOSE, new GMStateLose());
 
-        stateMachine.SwitchState(GameStates.INTRO); 
-    }
-
-
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            stateMachine.SwitchState(GameStates.INTRO);
-            Debug.Log("Intro");
-        }
-
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            stateMachine.SwitchState(GameStates.GAMEPLAY);
-            Debug.Log("Andar");
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            stateMachine.SwitchState(GameStates.PAUSE);
-            Debug.Log("Pular");
-        }
-        
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            stateMachine.SwitchState(GameStates.WIN);
-            Debug.Log("Parar");
-        }
-        
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            stateMachine.SwitchState(GameStates.LOSE);
-            Debug.Log("Correr");
-        }
+        stateMachine.SwitchState(GameStates.INTRO);
 
     }
 }
