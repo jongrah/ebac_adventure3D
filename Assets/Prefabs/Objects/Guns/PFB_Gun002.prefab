@@ -130,7 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabProjectile: {fileID: 7806445101323254952, guid: 88051d19d8947d04eb210b93ad766a59, type: 3}
   positionToShoot: {fileID: 7328471888094245165}
-  timeBetweenShoot: 0.3
+  timeBetweenShoot: 0.2
   speed: 50
   uiGunUpdaters: []
   maxShoot: 5
